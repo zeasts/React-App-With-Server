@@ -7,6 +7,9 @@ import Router from './core/Router';
 import Html from './components/Html/Html';
 const server = express();
 const port = process.env.PORT || 3000;
+const bs = require('browser-sync').create();
+bs.init({ proxy: 'localhost:3000' });
+
 server.use(express.static(path.join(__dirname, 'public')));
 server.get('*', (req, res) => {
   const component = Router.match(req);

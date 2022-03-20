@@ -2,7 +2,7 @@ import React from 'react';
 function Hero() {
   return (
     <div>
-      <h2>Rent Anything You Want</h2>
+      <h2>Rent Anything You Want- From Hero.js</h2>
       <p>From people around you</p>
       <form>
         <input
