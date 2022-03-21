@@ -1,21 +1,15 @@
-/*
- * Learning Isomorphic Web Application Development
- * Copyright © 2016 Konstantin Tarkus, Packt Publishing
- */
-
 import React from 'react';
-
 const path = '/404';
-const action = () => <NotFound />;
+const action = () =><NotFound />;
 
-function NotFound() {
-  return (
+function NotFound () {
+  return(
     <div>
-      <h1>Page Not Found</h1>
+      <h1>Page not Found</h1>
       <p>Sorry, but the page you were trying to view does not exist.</p>
-      <img src="https://cdn-icons-png.flaticon.com/512/580/580185.png" />
+      <img src="https://miro.medium.com/max/800/1*hFwwQAW45673VGKrMPE2qQ.png" />
     </div>
   );
 }
 
-export default { path, action };
+export default { path,  action };

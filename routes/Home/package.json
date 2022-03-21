@@ -1,6 +1,5 @@
 {
-    "private": true,
-    "name": "Home",
-    "main": "./Home.js"
-  }
-  
+  "private": true,
+  "name":"home",
+  "main": "./Home.js"
+}

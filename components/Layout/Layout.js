@@ -1,21 +1,23 @@
 import React from 'react';
+import propTypes from 'prop-types';
 import Header from '../Header/Header'
-import PropTypes from 'prop-types';
 function Layout({ hero, children }) {
   return (
     <div>
-      <Header>{hero}</Header>
+      <Header></Header>
       <main>
         {children}
       </main>
-<footer>
-   [35]
-<span>© Company Name</span>
+      <footer>
+        <span>© Company Name</span>
       </footer>
-</div> );
+    </div>
+  );
 }
+
 Layout.propTypes = {
-  hero: PropTypes.element,
-  children: PropTypes.element.isRequired
+  hero: propTypes.element,
+  children: propTypes.element.isRequired
 };
+
 export default Layout;

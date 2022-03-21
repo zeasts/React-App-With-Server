@@ -1,5 +1,0 @@
-{
-  "private": true,
-  "name": "InternalServerError",
-  "main": "./InternalServerError.js"
-}

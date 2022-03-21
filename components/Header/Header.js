@@ -1,23 +1,27 @@
-import React from 'react';
+import React from "react";
 import propTypes from 'prop-types';
+
 function Header({ children }) {
-  return (
+  return(
     <header>
       <div>
         <span>My App</span>
         {
-!children &&
+          !children &&
           <form><input type="search" /></form>
         }
-      <div>
-        <span>Username</span>
-        <img src="#" />
+        <div>
+          <span>Username</span>
+          <img src = "#" />
+        </div>
       </div>
-    </div>
-{children}
-</header> );
+      {children}
+    </header>
+  );
 }
+
 Header.propTypes = {
   children: propTypes.element
 };
+
 export default Header;
