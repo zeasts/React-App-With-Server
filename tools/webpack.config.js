@@ -1,21 +1,14 @@
-/*
- * Learning Isomorphic Web Application Development
- * Copyright © 2016 Konstantin Tarkus - Tomas Alabes, Packt Publishing
- */
 
 import path from 'path';
 import extend from 'extend';
 import { webpack } from 'webpack';
 
 const common = {
-
+  
   stats: {
     colors: true,
     chunks: false
   },
-
-
-
   module: {
     rules: [
       {
@@ -61,7 +54,7 @@ const common = {
               plugins: (loader) => [
                 require('postcss-import')({ root: loader.resourcePath }),
                 require('precss')(),
-                require('autoprefixer')()
+                require('autoprefixer')(),
               ]
             }
           }

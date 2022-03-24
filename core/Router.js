@@ -1,6 +1,7 @@
 const routes = [
   require('../routes/Home').default,
-  require('../routes/NotFound').default
+  require('../routes/NotFound').default,
+  require('../routes/ServerError').default
 ];
 
 const router = {

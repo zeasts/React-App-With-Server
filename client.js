@@ -1,21 +1,14 @@
-/*
- * Learning Isomorphic Web Application Development
- * Copyright © 2015 Konstantin Tarkus, Packt Publishing
- * All rights reserved.
- */
-
 import 'babel-core/register';
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import App from './components/App';
-import  Router  from './core/Router';
+import Router from './core/Router';
 
 function run() {
-  const component = Router.match({
+  const urlPath = Router.match({
     path: window.location.pathname
   });
 
-  ReactDOM.hydrate(component, document.getElementById('app'));
+  ReactDOM.hydrate(urlPath, document.getElementById('app'));
 }
 
 const loadedStates = ['complete', 'loaded', 'interactive'];

@@ -9,7 +9,7 @@ function Layout({ hero, children }) {
         {children}
       </main>
       <footer>
-        <span>© Company Name</span>
+        <span>© Company Name Captain</span>
       </footer>
     </div>
   );
